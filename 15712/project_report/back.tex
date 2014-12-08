@@ -1,0 +1,104 @@
+\section{Introduction}
+
+Traditionally, circuit switching and packet switching have been
+considered as alternative design choices, each with their own advantages
+and disadvantages. Packet switches are efficient at multiplexing traffic
+across a large number of ports, while circuit switches can often service
+higher line rates in a more cost-effective manner, especially when
+combined with optical links. However, as optical circuit switching
+technology advances, the reconfiguration time (i.e., the amount of time
+it takes to alter the input-to-output mapping) is swiftly decreasing,
+thus increasingly blurring the division between the packet and circuit
+regimes.
+
+One key domain in which these design tradeoffs are being revisited today
+is datacenter switching. The datacenter environment, aggregating
+tremendous amounts of compute and storage capacity, has driven demand
+for ever increasing port counts and line speeds. However, supporting
+these demands with existing packet switching technology is becoming
+increasingly expensive—in cost, heat and power. Moreover, studies have
+shown that the traffic demand inside a datacenter (both within and
+across racks) is frequently highly nonuniform, with a large fraction of
+the traffic at each switch port destined for a small number of output
+ports~\cite{Kandula:2009-2}.
+
+Based on these observations, researchers proposed hybrid datacenter
+network architectures that offer higher throughputs at lower cost by
+combining switching technologies. In particular, recent proposals
+suggest employing highspeed optical~\cite{Chen:2012, Farrington:2010,
+Wang:2010} or wireless~\cite{Halperin:2011, Kandula:2009, Zhou:2012}
+networks configured to service the heavy flows, while passing the
+remainder of the traffic through a traditional, relatively
+underprovisioned packet-switched network. 
+
+As technology trends usher in dramatically faster reconfiguration times,
+the distinction between packet and circuit is blurred, and ever smaller
+flows can take advantage of a hybrid fabric. This trend will soon allow
+servicing the bulk of the traffic through a rapidly reconfigurable
+optical switch~\cite{Porter:2013}, leaving a relatively minor portion to
+be serviced by the packet network~\cite{Liu:2014}. While the potential
+cost savings that hybrid technologies could realize is large, the design
+space for scheduling resources in the hybrid regime is not yet well
+understood. 
+
+Many of the classical approaches to scheduling for switches with
+non-trivial reconfiguration delays divide the offered demand into two
+parts: an initial, heavy-weight component that is served by O(N) highly
+utilized configurations with significant durations, and a second,
+residual component that is serviced by a similar number of short,
+under-utilized schedules. Recent Solstice scheduling
+algorithm~\cite{Liu:2014} exploits the skewed nature of datacenter
+traffic patterns to create a small number of configurations with long
+durations that minimize the penalty for reconfiguration and leaves only
+a small amount of residual demand to be serviced by a low-speed (and
+lowcost) unconstrained packet switch.
+
+Since the 
+
+To ensure high overall circuit utilization, each circuit configuration
+must be maintained for a relatively long period with respect to the
+reconfiguration delay. Since the configuration time is still
+non-trivial, it is still hard to schedule small traffic demands
+efficiently on optical switch. Scheduling algorithms are forced to
+serve these small demands by packet switch, which is slower and less
+cost-effective.
+
+To serve these small traffic demands on optical switches efficiently, we
+propose an indirection scheduling technique: instead of scheduling an
+extra link to serve the traffic, we could leverage existing links to
+indirectly serve the traffic. In this way, small traffic demands can
+be served by optical switch without additional configuration time.
+
+We first evaluate the indirection technique by formulating the scheduling
+problem into an integer linear programming (ILP) problem. Using ILP solver
+to compare the optimal solution with and without indirection, we show that
+using indirection could reduce the number of configurations and the
+total transmission time.
+
+We then evaluate the indirection technique by simulations. We implemented a
+preliminary indirection heuristic and applied it to the Solstice algorithm.
+
+The rest of this report is organized as follows.
+Section~\ref{sec:indirection} described the scheduling problem and the
+proposed indirection technique. Section~\ref{sec:ilp} described the ILP
+formulation and the solver results. Section~\ref{sec:simres} describes
+the preliminary indirection heuristic and the simulation results.
+Finally, we summarize this project in Section~\ref{sec:conclusion}.
+
+\section{The Indirection Heuristic}
+\label{sec:indirection}
+In this proposoal, we propose to improve the Solstice scheduling
+algorithm by introducing a indirection heuristic that reduce the number
+of configuration needed for the scheduling. Originally, Solstice will
+schedule each traffic demand by a direct path, which means that a new
+configuration is required to fulfill a demand that has different sources
+or destinations. Our heuristic proposes to schedule the small traffic
+demands indirectly. For example, port a has 5 demand to port b and 20
+demand to port c; port c has 20 demand to port b. Solstice will require
+3 configurations for these demands. However, we could let port a send
+all 25 demand to port c and let port c send 25 demand to port b. In this
+way we reduce one configuration time, which is nontrivial for optical
+switches. 
+
+\section{ILP Formulation of the Scheduling Problem}
+\label{sec:ilp}
