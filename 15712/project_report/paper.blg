@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper.aux
+The style file: abbrvnat.bst
+Database file #1: ref.bib
+Warning--entry type for "Gurobi" isn't style-file defined
+--line 56 of file ref.bib
+Warning--to sort, need author or key in Gurobi
+Warning--empty year in Gurobi
+Warning--empty year in Farrington:2010
+Warning--empty year in Farrington:2010
+Warning--empty year in Halperin:2011
+Warning--empty year in Halperin:2011
+Warning--empty year in Kandula:2009
+Warning--empty year in Kandula:2009-2
+Warning--empty year in Porter:2013
+Warning--empty year in Porter:2013
+Warning--empty year in Wang:2010
+Warning--empty year in Wang:2010
+Warning--empty year in Zhou:2012
+Warning--empty year in Zhou:2012
+You've used 10 entries,
+            2773 wiz_defined-function locations,
+            641 strings with 6616 characters,
+and the built_in function-call counts, 6040 in all, are:
+= -- 429
+> -- 585
+< -- 0
++ -- 197
+- -- 186
+* -- 564
+:= -- 942
+add.period$ -- 29
+call.type$ -- 10
+change.case$ -- 92
+chr.to.int$ -- 9
+cite$ -- 35
+duplicate$ -- 231
+empty$ -- 405
+format.name$ -- 195
+if$ -- 1216
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 9
+newline$ -- 57
+num.names$ -- 36
+pop$ -- 261
+preamble$ -- 1
+purify$ -- 82
+quote$ -- 0
+skip$ -- 154
+stack$ -- 0
+substring$ -- 21
+swap$ -- 21
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 110
+warning$ -- 14
+while$ -- 27
+width$ -- 0
+write$ -- 119
+(There were 15 warnings)

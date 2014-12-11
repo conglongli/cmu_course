@@ -1,0 +1,74 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gur()]{Gurobi}
+{Gurobi Optimizer}.
+\newblock URL \url{http://www.gurobi.com/}.
+
+\bibitem[Chen et~al.(2012)Chen, Singla, Singh, Ramachandran, Xu, Zhang, Wen,
+  and Chen]{Chen:2012}
+K.~Chen, A.~Singla, A.~Singh, K.~Ramachandran, L.~Xu, Y.~Zhang, X.~Wen, and
+  Y.~Chen.
+\newblock {OSA: An optical switching architecture for data center networks with
+  unprecedented flexibility}.
+\newblock In \emph{USENIX NSDI}, 2012.
+
+\bibitem[Farrington et~al.()Farrington, Porter, Radhakrishnan, Bazzaz,
+  Subramanya, Fainman, Papen, and Vahdat]{Farrington:2010}
+N.~Farrington, G.~Porter, S.~Radhakrishnan, H.~H. Bazzaz, V.~Subramanya,
+  Y.~Fainman, G.~Papen, and A.~Vahdat.
+\newblock {Helios: a hybrid electrical/optical switch architecture for modular
+  data centers}.
+\newblock In \emph{SIGCOMM 2010}.
+
+\bibitem[Halperin et~al.()Halperin, Kandula, Padhye, Bahl, and
+  Wetherall]{Halperin:2011}
+D.~Halperin, S.~Kandula, J.~Padhye, P.~Bahl, and D.~Wetherall.
+\newblock {Augmenting data center networks with multi-gigabit wireless links}.
+\newblock In \emph{SIGCOMM 2011}.
+
+\bibitem[Kandula et~al.({\natexlab{a}})Kandula, Padhye, and Bahl]{Kandula:2009}
+S.~Kandula, J.~Padhye, and P.~Bahl.
+\newblock {Flyways to de-congest data center networks}.
+\newblock In \emph{HotNets 2009}, {\natexlab{a}}.
+
+\bibitem[Kandula et~al.({\natexlab{b}})Kandula, Sengupta, Greenberg, Patel, and
+  Chaiken]{Kandula:2009-2}
+S.~Kandula, S.~Sengupta, A.~Greenberg, P.~Patel, and R.~Chaiken.
+\newblock {The nature of data center traffic: measurements \& analysis}.
+\newblock In \emph{IMC 2009}, {\natexlab{b}}.
+
+\bibitem[Liu et~al.(2014)Liu, Lu, Forencich, Kapoor, Tewari, Voelker, Papen,
+  Snoeren, and Porter]{Liu:2014}
+H.~Liu, F.~Lu, A.~Forencich, R.~Kapoor, M.~Tewari, G.~M. Voelker, G.~Papen,
+  A.~C. Snoeren, and G.~Porter.
+\newblock {Circuit Switching Under the Radar with REACToR}.
+\newblock In \emph{USENIX NSDI}, 2014.
+
+\bibitem[Porter et~al.()Porter, Strong, Farrington, Forencich, Chen-Sun,
+  Rosing, Fainman, Papen, and Vahdat]{Porter:2013}
+G.~Porter, R.~Strong, N.~Farrington, A.~Forencich, P.~Chen-Sun, T.~Rosing,
+  Y.~Fainman, G.~Papen, and A.~Vahdat.
+\newblock {Integrating microsecond circuit switching into the data center}.
+\newblock In \emph{SIGCOMM 2013}.
+
+\bibitem[Wang et~al.()Wang, Andersen, Kaminsky, Papagiannaki, Ng, Kozuch, and
+  Ryan]{Wang:2010}
+G.~Wang, D.~G. Andersen, M.~Kaminsky, K.~Papagiannaki, T.~Ng, M.~Kozuch, and
+  M.~Ryan.
+\newblock {c-Through: Part-time optics in data centers}.
+\newblock In \emph{SIGCOMM 2010}.
+
+\bibitem[Zhou et~al.()Zhou, Zhang, Zhu, Li, Kumar, Vahdat, Zhao, and
+  Zheng]{Zhou:2012}
+X.~Zhou, Z.~Zhang, Y.~Zhu, Y.~Li, S.~Kumar, A.~Vahdat, B.~Y. Zhao, and
+  H.~Zheng.
+\newblock {Mirror mirror on the ceiling: flexible wireless links for data
+  centers}.
+\newblock In \emph{SIGCOMM 2012}.
+
+\end{thebibliography}
